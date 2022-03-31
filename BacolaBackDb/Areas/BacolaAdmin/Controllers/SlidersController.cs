@@ -94,8 +94,7 @@ namespace BacolaBackDb.Areas.BacolaAdmin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        // GET: BacolaAdmin/Sliders/Edit/5
+        
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -155,7 +154,6 @@ namespace BacolaBackDb.Areas.BacolaAdmin.Controllers
             return View(slider);
         }
 
-        // GET: BacolaAdmin/Sliders/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
